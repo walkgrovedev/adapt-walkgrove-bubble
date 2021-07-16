@@ -1,0 +1,23 @@
+<div class="component__inner bubble__inner">
+  {{> component this}}
+
+  <div class="bubble__main">
+
+    {{#each _items}}
+    <div class="bubble__widget is-hidden {{../_direction}}" role="heading" aria-level="5" tabindex="0">
+      <div class="bubble__widget-content">{{{text}}}</div>
+    </div>
+    {{/each}}
+
+    <div class="bubble__buttons">
+      <button class="btn js-bubble-click-prev" aria-label="{{_globals._accessibility._ariaLabels.previous}}" role="button" aria-pressed="false" tabindex="0">
+        <span class="icon icon-controls-left "></span>
+      </button>
+      <button class="btn js-bubble-click-next" aria-label="{{_globals._accessibility._ariaLabels.next}}" role="button" aria-pressed="false" tabindex="0">
+        <span class="icon icon-controls-right "></span>
+      </button>
+    </div>
+  
+  </div>
+
+</div>

@@ -1,0 +1,16 @@
+{
+  "name": "adapt-walkgrove-bubble",
+  "version": "1.0.0",
+  "framework": ">=5",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-text",
+  "issues": "https://github.com/adaptlearning/adapt_framework/issues/new",
+  "component" : "bubble",
+  "displayName" : "Bubble",
+  "description": "A simple core contributed text component",
+  "main": "/js/adapt-walkgrove-bubble.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

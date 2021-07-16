@@ -1,0 +1,25 @@
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "bubble",
+        "_classes": "",
+        "_layout": "left",
+        "title": "What is lived experience?",
+        "displayTitle": "What is lived experience?",
+        "body": "<p>Med details his experience below.</p>",
+        "instruction": "Select the <strong>arrows</strong> to read more.",
+        "_direction": "right",
+        "_items": [
+            {
+                "text": "<p>Hi, my name is Med. I have been reporting from my community in Sierra Leone for over 7 years. In this topic we are going to think about our own experiences and why they are important in our role as citizen journalists.</p><p>Some citizen reporters are in a position, or are forced, to cover \u2018breaking news\u2019 - news that is happening now. For us, that was the Ebola outbreak in 2014. However, it's not always the big headlines that we need to think about. </p>"
+            },
+            {
+                "text": "<p>In our societies, there are deep issues and problems. Some of these are not well understood by the public, or by the people who have the power to make decisions about the problems. </p><p>Often, there are not opportunities for society to hear from people who have faced these issues themselves. These people have what we call \u2018lived experience.\u2019</p>"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_isCompletionIndicatorEnabled": false
+        }
+    }

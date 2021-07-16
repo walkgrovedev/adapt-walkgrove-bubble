@@ -1,0 +1,120 @@
+.bubble {
+    &__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__widget {
+
+        animation-name: fadeIn;
+        animation-duration: 1s;
+
+        position: relative;
+
+        &.right {
+            &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                left: 100%;
+                top: 25%;
+                transform: translate(0%,0%);
+                position: absolute;
+                border-style: solid;
+                border-width: 20px 0 20px 30px;
+                border-color: transparent transparent transparent @tertiary-colour;
+
+                @media (max-width: 823px) and (orientation: landscape) {
+                    border-width: 30px 20px 0 20px;
+                    border-color: @tertiary-colour transparent transparent transparent;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                }
+                
+                @media (max-width: @device-width-small) {
+                    border-width: 30px 20px 0 20px;
+                    border-color: @tertiary-colour transparent transparent transparent;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                }
+            }
+        }
+
+        &.left {
+            &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                left: 0%;
+                top: 25%;
+                transform: translate(-100%,0%);
+                position: absolute;
+                border-style: solid;
+                border-width: 20px 30px 20px 0;
+                border-color: transparent @tertiary-colour transparent transparent;
+
+                @media (max-width: 823px) and (orientation: landscape) {
+                    border-width: 30px 20px 0 20px;
+                    border-color: @tertiary-colour transparent transparent transparent;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                }
+
+                @media (max-width: @device-width-small) {
+                    border-width: 30px 20px 0 20px;
+                    border-color: @tertiary-colour transparent transparent transparent;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                }
+            }
+        }
+
+        &.is-hidden {
+            display: none;
+        }
+
+        .bubble__widget-content {
+            border-radius: 1rem;
+            border: 3px solid @tertiary-colour;
+            padding: 1rem 2rem;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        margin-top: 1rem;
+
+        justify-content: flex-end;
+
+        .btn {
+            background-color: @bubble-button-background;
+            color: @bubble-button-label;
+            margin: 0 0.5rem;
+            font-weight: 600;
+            border-radius: 100%;
+            padding: 0.5rem;
+            min-width: 0;
+        
+            font-family: "vanilla";
+        
+            &:disabled {
+                background-color: @disabled;
+                color: @disabled-inverted;
+            
+                &:hover {
+                    background-color: @disabled;
+                    color: @disabled-inverted;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
