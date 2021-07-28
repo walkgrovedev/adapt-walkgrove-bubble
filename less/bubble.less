@@ -22,11 +22,11 @@
                 position: absolute;
                 border-style: solid;
                 border-width: 20px 0 20px 30px;
-                border-color: transparent transparent transparent @tertiary-colour;
+                border-color: transparent transparent transparent @bubble-background;
 
                 @media (max-width: 823px) and (orientation: landscape) {
                     border-width: 30px 20px 0 20px;
-                    border-color: @tertiary-colour transparent transparent transparent;
+                    border-color: @bubble-background transparent transparent transparent;
                     top: 100%;
                     left: 50%;
                     transform: translate(-50%, 0%);
@@ -34,7 +34,7 @@
                 
                 @media (max-width: @device-width-small) {
                     border-width: 30px 20px 0 20px;
-                    border-color: @tertiary-colour transparent transparent transparent;
+                    border-color: @bubble-background transparent transparent transparent;
                     top: 100%;
                     left: 50%;
                     transform: translate(-50%, 0%);
@@ -53,11 +53,11 @@
                 position: absolute;
                 border-style: solid;
                 border-width: 20px 30px 20px 0;
-                border-color: transparent @tertiary-colour transparent transparent;
+                border-color: transparent @bubble-background transparent transparent;
 
                 @media (max-width: 823px) and (orientation: landscape) {
                     border-width: 30px 20px 0 20px;
-                    border-color: @tertiary-colour transparent transparent transparent;
+                    border-color: @bubble-background transparent transparent transparent;
                     top: 100%;
                     left: 50%;
                     transform: translate(-50%, 0%);
@@ -65,7 +65,7 @@
 
                 @media (max-width: @device-width-small) {
                     border-width: 30px 20px 0 20px;
-                    border-color: @tertiary-colour transparent transparent transparent;
+                    border-color: @bubble-background transparent transparent transparent;
                     top: 100%;
                     left: 50%;
                     transform: translate(-50%, 0%);
@@ -79,8 +79,9 @@
 
         .bubble__widget-content {
             border-radius: 1rem;
-            border: 3px solid @tertiary-colour;
+            border: 3px solid @bubble-background;
             padding: 1rem 2rem;
+            color: @bubble-content;
         }
     }
 
