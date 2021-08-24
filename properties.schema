@@ -47,7 +47,7 @@
         "type": "object",
         "required": true,
         "properties": {
-          "title": {
+          "text": {
             "type": "string",
             "required": true,
             "inputType": "Text",

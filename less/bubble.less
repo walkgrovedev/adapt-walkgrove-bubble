@@ -113,9 +113,38 @@
             }
         }
     }
+
+    
 }
 
 @keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
 }
+
+.dir-rtl {
+
+    .bubble {
+        &__widget {
+            &.right {
+                &:after {
+                    border-width: 20px 30px 20px 0;
+                    border-color: transparent @bubble-background transparent transparent;
+                    transform: translate(-100%,0%);
+                    left: 0%;
+                }
+            }
+
+            &.left {
+                &:after {
+                    border-width: 20px 0 20px 30px;
+                    border-color: transparent transparent transparent @bubble-background;
+                    transform: translate(0%,0%);
+                    left: 100%;
+                }
+            }
+        }
+    }
+
+}
+
