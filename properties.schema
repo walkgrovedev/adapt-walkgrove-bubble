@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "",
+      "default": "Speech bubble. Select the next button to progress.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
